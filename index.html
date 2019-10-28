@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>firebase Todos</title>
+<link rel="stylesheet" href="style.css">
+    
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+</head>
+
+<body>
+
+    <h2>My Todos</h2>
+     
+    <form id="add-todo">
+            <div>
+              <label>Titel:</label>
+              <input type="text" name="title" />
+            </div>
+            <div>
+              <label>Indhold</label>
+              <textarea name="content"></textarea>
+            </div>
+            <div>
+              <label>Afsluttet?</label>
+              <input type="checkbox" name="done" />
+            </div>
+            <button type="submit">Opret</button>
+          </form>
+
+          <br>
+          <br>
+          <br>
+          <hr>
+
+
+    <ul id="todos"></ul>
+
+
+    
+
+    <script src="./firebase/firebase.js"></script>
+    <script src="./script/main.js"></script>
+    
+</body>
+
+</html>
