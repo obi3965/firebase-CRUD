@@ -16,3 +16,6 @@ var firebaseConfig = {
 
   //references to database
   const db = firebase.firestore();
+
+  // referer til authentication service 
+const auth = firebase.auth();

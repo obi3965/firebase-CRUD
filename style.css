@@ -6,3 +6,8 @@ body{
 #todos{
     border: 2px solid tomato;
 }
+#login-form{
+    width: 400px;
+    margin:40px auto;
+
+}
